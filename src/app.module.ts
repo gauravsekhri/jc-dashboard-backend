@@ -10,9 +10,7 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(
-      'mongodb+srv://admin:admin@cluster0.javws.mongodb.net/',
-    ),
+    MongooseModule.forRoot(process.env.MONGODB_URL),
     UsersModule,
     ConfigModule.forRoot(),
     ProductsModule,
