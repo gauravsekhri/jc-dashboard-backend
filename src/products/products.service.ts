@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Product } from './products.model';
-import ApiResponse from 'src/utils/ApiResponse';
+import ApiResponse from '../utils/ApiResponse';
 import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()
