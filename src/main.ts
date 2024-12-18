@@ -22,5 +22,5 @@ async function bootstrap() {
   await app.listen(process.env.PORT || 4000);
 }
 
-AppClusterService.clusterize(bootstrap);
-// bootstrap();
+// AppClusterService.clusterize(bootstrap);
+bootstrap();
