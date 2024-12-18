@@ -14,7 +14,10 @@ import { APP_GUARD } from '@nestjs/core';
     ConfigModule.forRoot({
       isGlobal: true,
     }),
-    MongooseModule.forRoot(process.env.MONGODB_URL),
+    // MongooseModule.forRoot(process.env.MONGODB_URL),
+    MongooseModule.forRoot(
+      'mongodb+srv://admin:admin@cluster0.javws.mongodb.net/',
+    ),
     UsersModule,
     ProductsModule,
     ThrottlerModule.forRoot([
