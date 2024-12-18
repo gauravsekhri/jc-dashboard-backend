@@ -19,8 +19,8 @@ async function bootstrap() {
     allowedHeaders: ['Content-Type', 'Authorization'],
   });
 
-  await app.listen(process.env.PORT);
+  await app.listen(process.env.PORT || 4000);
 }
 
-// AppClusterService.clusterize(bootstrap);
-bootstrap();
+AppClusterService.clusterize(bootstrap);
+// bootstrap();
