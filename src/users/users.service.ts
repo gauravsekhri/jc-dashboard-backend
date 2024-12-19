@@ -38,9 +38,10 @@ export class UserService {
         });
 
         response.cookie('auth', token, {
-          secure: true,
+          // secure: true,
           httpOnly: true,
           sameSite: 'none',
+          domain: 'https://jc-dashboard-frontend.vercel.app',
           maxAge: parseInt(process.env.COOKIE_MAXAGE),
         });
 
