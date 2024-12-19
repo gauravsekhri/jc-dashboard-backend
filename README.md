@@ -13,7 +13,7 @@
    PORT=5000
    JWT_TOKEN_SECRET="secret"
    JWT_TOKEN_EXPIRESIN="1h"
-   COOKIE_MAXAGE=36
+   COOKIE_MAXAGE=3600000
    HASH_SALT="your-salt"
    MONGODB_URL="mongodb://localhost:27017/jc-data"
    ```
