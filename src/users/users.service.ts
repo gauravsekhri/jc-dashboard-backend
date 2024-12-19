@@ -44,7 +44,7 @@ export class UserService {
           maxAge: parseInt(process.env.COOKIE_MAXAGE),
         });
 
-        return new ApiResponse(true, 200, 'User authenticated.', null);
+        return new ApiResponse(true, 200, 'User authenticated.', { token });
       } else {
         return new ApiResponse(false, 200, 'Invalid credentials!', null);
       }
