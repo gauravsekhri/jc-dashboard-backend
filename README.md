@@ -21,3 +21,13 @@
    ```
    npm run start:dev
    ```
+
+### Note
+
+If you wish to enable clustering, please make the following changes at the end of `main.ts` file.
+```
+AppClusterService.clusterize(bootstrap);
+// bootstrap();
+```
+
+I have disabled it because it is not supported on free deployment platforms.
