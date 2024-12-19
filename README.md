@@ -4,19 +4,20 @@
 
 #### Backend
 
-1. Switch to respective folder
-   ```
-   cd backend
-   ```
-2. Install dependencies
+1. Install dependencies
    ```
    npm install
    ```
-3. Create `.env` and add below code
+2. Create `.env` and add below code
    ```
-   MONGODB_URL=mongodb://localhost:27017/jc-data
+   PORT=5000
+   JWT_TOKEN_SECRET="secret"
+   JWT_TOKEN_EXPIRESIN="1h"
+   COOKIE_MAXAGE=36
+   HASH_SALT="your-salt"
+   MONGODB_URL="mongodb://localhost:27017/jc-data"
    ```
-4. Run the application
+3. Run the application
    ```
    npm run start:dev
    ```
