@@ -40,6 +40,7 @@ export class UserService {
         response.cookie('auth', token, {
           secure: true,
           httpOnly: true,
+          sameSite: 'none',
           maxAge: parseInt(process.env.COOKIE_MAXAGE),
         });
 
